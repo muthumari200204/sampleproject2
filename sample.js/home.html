@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Cart</title>
+  <link rel="stylesheet" href="home.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="card-left">
+      <div class="main-image">
+        <img src="b 3.jpg" alt="Canon EOS 1500D main image">
+        <img src="b1.jpg" alt="Canon EOS 1500D additional image 1">
+        <img src="b4.jpg" alt="Canon EOS 1500D additional image 2">
+        <img src="b8.jpg" alt="Canon EOS 1500D additional image 3">
+      </div>
+      <div class="img-select">
+        <div class="img active">
+          <a href="#" data-id="1"><img src="b8.jpg" alt="Canon EOS 1500D thumbnail 1"></a>
+        </div>
+        <div class="img">
+          <a href="#" data-id="2"><img src="b4.jpg" alt="Canon EOS 1500D thumbnail 2"></a>
+        </div>
+        <div class="img">
+          <a href="#" data-id="3"><img src="b 3.jpg" alt="Canon EOS 1500D thumbnail 3"></a>
+        </div>
+        <div class="img">
+          <a href="#" data-id="4"><img src="b1.jpg" alt="Canon EOS 1500D thumbnail 4"></a>
+        </div>
+      </div>
+    </div>
+    <div class="card-right">
+      <h2>Canon EOS 1500D</h2>
+      <div class="star">
+        <div class="star-group">
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+        </div>
+        <span>3 Reviews</span>
+      </div>
+      <h4>39.00 <span>50.00</span></h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum suscipit, omnis quis, esse tenetur eligendi est quibusdam enim in temporibus sint architecto facere numquam voluptas. Enim porro dolorum odio labore!</p>
+
+      <div class="form">
+        <div class="form-group">
+          <label for="color">Color</label>
+          <select id="color">
+            <option>Black</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="qty">Qty</label>
+          <div class="input-group">
+            <button class="minus" aria-label="Decrease quantity">-</button>
+            <input type="text" value="1" id="qty" aria-labelledby="qty">
+            <button class="plus" aria-label="Increase quantity">+</button>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn-cart">Add to Cart</button>
+
+    </div>
+  </div>
+
+  <script src="home.js"></script>
+</body>
+
+</html>
